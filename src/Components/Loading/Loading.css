@@ -1,0 +1,42 @@
+.loading{
+  margin: 0;
+  padding: 0;
+}
+
+.section-loading {
+  height: 100vh !important;
+  width: 100vw !important;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-loading ul.list-bars {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.section-loading ul.list-bars li {
+  margin: 0 .7rem !important;
+  width: .7rem;
+  border-radius: 10px;
+  background-color: #ff7f50;
+  animation: animate 0.8s infinite alternate;
+}
+.section-loading ul.list-bars li:nth-child(odd) {
+  height: 100px;
+  animation-delay: .6s;
+}
+.section-loading ul.list-bars li:nth-child(even) {
+  height: 20px;
+}
+
+@keyframes animate {
+  from {
+    height: 5px;
+  }
+  to {
+    height: 90px;
+  }
+}

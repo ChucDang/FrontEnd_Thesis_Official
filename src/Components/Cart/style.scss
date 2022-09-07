@@ -1,0 +1,98 @@
+.cart {
+  padding: 2rem;
+  text-align: center;
+
+  .cart__noneValue {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    color: green;
+    align-items: center;
+    justify-content: center;
+  }
+  .cart__label {
+    color: #1f4690;
+    text-align: center;
+    .cart__label__btn {
+      width: 110% !important;
+      
+    }
+  }
+  .cart__row {
+    display: flex !important;
+    align-items: center;
+    margin-top: 1rem !important ;
+    justify-content: center;
+    .cart__row__grpbtn {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .cart__row--strikethrough {
+      color: gray;
+      text-decoration: line-through;
+    }
+    .cart__row__img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// Định dạng cho ConfirmUserDetail.js
+.confirm {
+  height: fit-content;
+
+  .confirm__container {
+    height: fit-content;
+    .confirm__container__user {
+      margin-bottom: 1rem !important;
+    }
+    .confirm__container__address {
+      display: flex !important;
+      flex-wrap: wrap;
+      .confirm__container__address__select {
+        width: 25% !important;
+        display: inline-block;
+        margin-left: 1rem !important;
+      }
+    }
+    .confirm__container__note {
+      margin-top: 1rem !important;
+    }
+    .confirm__container__btn {
+      margin-top: 1rem !important;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      .confirm__container__btn--cancel {
+        width: 10rem;
+        margin-left: 1rem !important;
+      }
+      .confirm__container__btn--order {
+        width: 10rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  .cart{
+    * {
+      font-size: 7px !important;
+    
+    }
+    width: 100vw;
+    
+  }
+  .confirm {
+    *{font-size: 10px !important;}
+  }
+  .confirm__container__btn--cancel {
+    width: fit-content !important;
+ 
+  }
+  .confirm__container__btn--order {
+    width: fit-content !important;
+  }
+}

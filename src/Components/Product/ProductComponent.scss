@@ -1,0 +1,132 @@
+// .card_item là className của mỗi Card product trong trang home
+.card_item {
+  padding: 0.5rem !important;
+  color: #001c44 !important;
+  .card_item__img{
+    width: 100%;
+    height: auto;
+
+  }
+  .card_item__icons {
+    margin: 1rem 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    .card_item__icons__icon {
+      padding: 0.5rem;
+      .card_item__icons__icon--width {
+        width: 20px;
+      }
+    }
+  }
+  .card_item__gift {
+    font-size: smaller;
+    * {
+      color: green;
+    }
+  }
+  .card_item__price {
+    display: flex;
+    justify-content: space-around;
+    .card_item__price--new {
+      background-color: #001c44;
+      color: white;
+      padding: 0.5rem;
+      border-radius: 1rem;
+    }
+    .card_item__price--old {
+      padding: 0.5rem;
+      text-decoration-line: line-through;
+      .card_item__price--old--badge {
+        color: red;
+        margin-left: 0.2rem !important;
+      }
+    }
+  }
+  .cart_item__amount {
+    color: #002e5a;
+    text-align: right;
+  }
+}
+
+// Định dạng cho các Tab của trang chi tiết sản phẩm
+//Tab Rating
+.tab-section {
+  color: #001c44 !important;
+  width: inherit;
+  margin-bottom: 1rem !important;
+  .tab-section__item {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+    .tab-section__item--stars {
+      margin: 1rem !important;
+    }
+  }
+}
+//Tab thông số
+.product-tab {
+  margin: 1rem 2rem !important;
+  .product-tab--head {
+    text-transform: capitalize;
+    color: green;
+    margin: 0.3rem 0 !important;
+  }
+
+  .product-tab__1col {
+    margin: 1rem 0 !important;
+    width: 100%;
+    .product-tab__1col--item {
+      padding: 0.5rem;
+    }
+  }
+
+  .product-tab__2col {
+    display: flex !important;
+    flex-direction: row !important;
+    padding-top: 0.5rem;
+
+    .product-tab__2col--item {
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+// Info Tab
+.info-tab {
+  position: relative;
+  top: -3rem;
+  left: 3rem;
+  .info-tab__row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    .info-tab__row--item {
+      display: inline-block;
+      width: 50%;
+      padding-bottom: 1rem;
+    }
+  }
+}
+//Định dạng tên danh mục trước khi hiển thị danh sách Product
+.category_label {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  font-size: xx-large;
+  letter-spacing: 0.7rem;
+  color: #001c44;
+  text-transform: capitalize;
+}
+
+@media only screen and (max-width: 500px) {
+  .card_item__icons__icon {
+    padding: 1rem;
+    
+    .card_item__icons__icon--width {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+}

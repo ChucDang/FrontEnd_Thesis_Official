@@ -1,0 +1,22 @@
+.registerForm {
+  padding-top: 2rem;
+  margin: auto !important;
+  .registerForm__title {
+    color: blue;
+    margin: 0.5rem 0 !important;
+    padding-bottom: 0.5rem;
+  }
+  .registerForm__button {
+    margin-top: 1rem !important;
+    display: flex;
+    justify-content: flex-end;
+    * {
+      width: 10rem;
+    }
+  }
+  .registerForm_sexs {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+  }
+}

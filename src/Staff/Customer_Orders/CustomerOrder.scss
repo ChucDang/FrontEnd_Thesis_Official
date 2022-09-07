@@ -1,0 +1,68 @@
+.customer-orders {
+  .customer-orders__status {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+
+    cursor: pointer;
+
+    .customer-orders__status--Waiting {
+      text-align: center;
+      width: 25%;
+      padding: 1rem 0;
+    }
+    .customer-orders__status--Packaged {
+      text-align: center;
+
+      width: 25%;
+      padding: 1rem 0;
+    }
+    .customer-orders__status--Delivering {
+      text-align: center;
+
+      width: 25%;
+      padding: 1rem 0;
+    }
+    .customer-orders__status--Finish {
+      text-align: center;
+
+      width: 25%;
+      padding: 1rem 0;
+    }
+  }
+}
+
+.onSelect {
+  background-color: #234c63;
+
+  * {
+    color: #eeeeee;
+  }
+}
+
+@media only screen and (max-width: 626px) {
+  .customer-orders__status--Waiting {
+    text-align: center;
+    width: 25%;
+    padding: 1rem 0;
+  }
+  .customer-orders__status--Packaged {
+    text-align: center;
+
+    width: 25%;
+    padding: 1rem 0;
+  }
+  .customer-orders__status--Delivering {
+    text-align: center;
+
+    width: 25%;
+    padding: 1rem 0;
+  }
+  .customer-orders__status--Finish {
+    text-align: center;
+
+    width: 25%;
+    padding: 1rem 0;
+  }
+}

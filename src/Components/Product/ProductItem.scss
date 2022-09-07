@@ -1,0 +1,31 @@
+.Stack {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 0.5rem !important;
+  .Stack__img {
+    width: 50%;
+    margin-right: 0.5rem !important;
+  }
+  .Stack__info {
+    .Stack__info__model {
+    }
+    .Stack__info__price {
+      font-size: small;
+      display: flex;
+      text-transform: lowercase;
+      .Stack__info__price--new {
+        color: red;
+
+        margin-right: 0.7rem !important;
+      }
+      .Stack__info__price--old {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+}

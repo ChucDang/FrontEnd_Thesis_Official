@@ -1,0 +1,21 @@
+//Style cho component Create CPU
+.note {
+  font-size: small;
+  margin-bottom: 0.5rem !important;
+}
+
+.grpbtn {
+  display: flex;
+  margin-top: 1.5rem !important;
+  justify-content: right;
+  margin-right: 3rem !important;
+  .grpbtn__save {
+    width: 7rem;
+  }
+  .grpbtn__clear {
+    width: 7rem;
+    margin-left: 1rem !important;
+  }
+}
+
+//Style cho Component create RAM

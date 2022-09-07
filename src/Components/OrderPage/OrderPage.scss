@@ -1,0 +1,68 @@
+.orderitem {
+  color: #001c44;
+  margin: 2rem 3rem !important;
+  border: 2px solid #001c44 !important;
+  .orderitem__body {
+    padding: 1rem 3rem;
+    .orderitem__body__deliveryInfo {
+      font-size: smaller;
+      color: orangered;
+    }
+    .orderitem__body__nameproduct {
+      display: inline-block;
+    }
+    .orderitem__body__info {
+      display: inline-block;
+      margin-left: 10rem !important;
+    }
+    .orderitem__body__sale {
+      color: green;
+      text-align: right;
+      padding-right: 5rem;
+      font-size: smaller;
+    }
+  }
+  .orderitem__header {
+    display: flex;
+    background-color: #001c44;
+
+    .orderitem__header--name {
+      color: aliceblue;
+    }
+    .orderitem__header--status {
+      position: relative;
+      top: -0.5rem;
+      right: -0.5rem;
+    }
+    .orderitem__header--icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-left: auto !important;
+      cursor: pointer;
+      * {
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+.noticeNoneValue {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  color: green;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 626px) {
+  .orderitem{
+    *{
+      font-size: 8px !important;
+    }
+    margin: 1rem 0 !important;
+    .orderitem__body {
+      padding: 1rem .2rem;
+    }
+  }
+}

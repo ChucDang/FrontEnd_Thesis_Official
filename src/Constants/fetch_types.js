@@ -1,0 +1,5 @@
+export const FETCH_TYPES = {
+    CITIES: "FETCH_CITIES",
+    DISTRICTS: "FETCH_DISTRICTS",
+    WARDS: "FETCH_WARDS",
+};

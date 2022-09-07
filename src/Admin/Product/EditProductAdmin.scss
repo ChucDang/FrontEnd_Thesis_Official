@@ -1,0 +1,44 @@
+.editProduct {
+  color: #001c44;
+  .editProduct__header {
+    display: block;
+    margin-top: 1rem !important;
+    font-size: large;
+  }
+  .editProduct__body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0.8rem !important;
+    .editProduct__body__grp {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      .editProduct__body__grp__btn {
+        margin-left: 1rem !important;
+        width: fit-content;
+      }
+      .editProduct__body__grp__select {
+        width: 70%;
+      }
+    }
+    .editProduct__body--imgwidth {
+      width: 50%;
+    }
+  }
+  .editProduct__grpbtn {
+    display: flex;
+    justify-content: right;
+    margin-right: 4rem !important;
+    margin-bottom: 2rem !important;
+    .editProduct__grpbtn--btnSave {
+      display: inline-block;
+      width: 7rem;
+    }
+    .editProduct__grpbtn--btnClear {
+      display: inline-block;
+      width: 7rem;
+      margin-left: 1rem !important;
+    }
+  }
+}

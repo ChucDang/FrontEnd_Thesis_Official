@@ -1,0 +1,98 @@
+.listUser {
+  display: flex;
+  margin: auto !important;
+  padding-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  .listUser__search {
+    margin-bottom: 1rem !important;
+
+    display: flex;
+    justify-content: center;
+    .listUser__search__input {
+      margin-right: 0rem !important;
+      padding: 0.5rem;
+    }
+    .listUser__search__clear {
+      display: inline-block !important;
+      width: 3rem;
+      text-align: center;
+      margin-right: 1rem !important;
+      background-color: #003865;
+    }
+    .listUser__search__btn {
+      display: inline-block !important;
+      width: 7rem;
+
+      background-color: #003865;
+      color: #d4f6cc;
+      border: none;
+      padding: 0.5rem;
+    }
+  }
+  //   border-style: solid;
+  .listUser__header {
+    background-color: #003865;
+    color: #d4f6cc;
+    padding: 0.3rem;
+    text-align: center;
+  }
+  .listUser__user {
+    padding: 0.5rem;
+    border-bottom: 1px solid #003865;
+  }
+  .listUser__grpBtn{
+    display: flex;
+    justify-content: space-evenly;
+    .listUser__grpBtn__delete{
+      width: fit-content !important;
+    }
+    .listUser__grpBtn__edit{
+      width: fit-content !important;
+    }
+  }
+}
+
+//Style cho Edit Button
+.editForm {
+  .editForm__label {
+    color: #003865;
+    font-size: large;
+    padding: 0.5rem 0;
+  }
+  .editForm__info {
+    margin-bottom: 0.5rem !important;
+  }
+  .editFrom__btn {
+    display: flex;
+    justify-content: right;
+    margin-top: 1.8rem !important;
+    margin-bottom: 0.3rem !important;
+    .editFrom__btn--save {
+      width: 7rem;
+      margin-right: 1rem !important;
+    }
+    .editFrom__btn--cancel {
+      width: 7rem;
+    }
+  }
+}
+@media only screen and (max-width: 627px) {
+  .listUser{
+    *{font-size: small;}
+  }
+  .listUser__grpBtn{
+    *{
+      font-size: small !important;
+    }
+    .listUser__grpBtn__delete{
+      width: fit-content !important;
+   
+    }
+    .listUser__grpBtn__edit{
+      width: fit-content !important;
+    }
+  }
+   
+  
+}

@@ -1,0 +1,56 @@
+.info-user {
+  margin: auto !important;
+
+  .info-user__header {
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .info-user__btn {
+    display: flex;
+    margin-top: 2rem !important;
+    justify-content: flex-end;
+    .info-user__btn__save {
+      width: 10rem;
+      margin-left: 1rem !important;
+    }
+    .info-user__btn__reset {
+      width: 8rem;
+      margin-left: 1rem !important;
+    }
+  }
+}
+
+.button-change-password {
+  margin-top: 1.5rem !important;
+  display: flex;
+  justify-content: center;
+  .button-change-password__agree {
+    width: 7rem;
+  }
+  .button-change-password__clear {
+    width: 7rem;
+    margin-left: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-change-password {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 521px) {
+  .info-user__btn{
+    justify-content: flex-start;
+    .info-user__btn__save {
+      width: fit-content !important;
+      margin: 0rem !important;
+    }
+    .info-user__btn__reset {
+    
+      width: fit-content !important;
+      margin: 0rem !important;
+    }
+  }
+}
+

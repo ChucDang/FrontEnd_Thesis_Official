@@ -1,0 +1,54 @@
+// SCSS chính thức
+* {
+  margin: 0 !important;
+  font-family: "Hahmlet", serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #002e5a;
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+//CSS ẩn thanh scrollbar
+
+*::-webkit-scrollbar {
+  display: none; /* cho Chrome, Safari, and Opera */
+}
+
+.info-section div {
+  padding-bottom: 0.2rem;
+  font-size: smaller;
+}
+
+.img_detail {
+  width: 100%;
+}
+
+//Style cho thanh số trang
+.pagination {
+  justify-content: center;
+  margin: 1rem 0 !important;
+}
+
+//Thêm biến cho offCanvas ReactBoostrap
+.offcanvas-center {
+  top: 10%;
+  right: 15%;
+  left: 15%;
+  height: fit-content;
+  padding: 20px;
+  transform: translateY(-100%);
+}
+@media only screen and (max-width: 768px) {
+  .offcanvas-center {
+    top: 0;
+    right: 0;
+    left: 0;
+    height: fit-content;
+    padding: 0;
+    // transform: translateY(100%);
+  }
+}
+
+
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";
